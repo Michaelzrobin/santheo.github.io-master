@@ -1,0 +1,56 @@
+.icons-sprite, .nav .family a:before, .nav .tsl a:before, .nav .puzzling a:before {
+  background: url('/icons-s415c84d150.png') no-repeat;
+}
+
+.icons24-sprite, .family h2:before, .tsl h2:before, .puzzling h2:before {
+  background: url('/icons24-s3825a9b3c4.png') no-repeat;
+}
+
+.nav li {
+  padding: 0 18px;
+}
+.nav li a {
+  position: relative;
+}
+.nav li a:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 2px;
+  left: -22px;
+}
+.nav .family a:before {
+  background-position: 0 -16px;
+}
+.nav .tsl a:before {
+  background-position: 0 0;
+}
+.nav .puzzling a:before {
+  background-position: 0 -32px;
+}
+
+section h2 {
+  position: relative;
+  margin-left: 4%;
+}
+section h2:before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 2px;
+  left: -30px;
+}
+
+.family h2:before {
+  background-position: 0 -24px;
+}
+
+.tsl h2:before {
+  background-position: 0 0;
+}
+
+.puzzling h2:before {
+  background-position: 0 -48px;
+}

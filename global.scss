@@ -1,0 +1,71 @@
+@import "compass/css3/border-radius";
+@import "icons/*.png";
+@import "icons24/*.png";
+
+// @include all-icons-sprites;
+
+.nav {
+    li {
+        padding: 0 18px;
+
+        a {
+            position: relative;
+
+            &:before {
+                content: "";
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                top: 2px;
+                left: -22px;
+            }
+        }
+    }
+
+    .family a:before {
+        @include icons-sprite(leaf);
+    }
+
+    .tsl a:before {
+        @include icons-sprite(pencil-ruler);
+    }
+
+    .puzzling a:before {
+        @include icons-sprite(question);
+    }
+}
+
+section{
+
+    h2{
+        // CANT FIGURE OUT HOW TO
+        // MAKE THIS WORK FOR MOBILE WIDTH
+        // OR WHETHER I SHOULD BE
+        // USING A MARGIN HERE
+        // TO MAKE ROOM FOR THE ICON
+        position: relative;
+        margin-left: 4%;
+
+        &:before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 2px;
+            left: -30px;
+        }
+    }
+}
+
+    .family h2:before {
+        @include icons24-sprite(leaf);
+    }
+
+    .tsl h2:before {
+        @include icons24-sprite(pencil-ruler);
+    }
+
+    .puzzling h2:before {
+        @include icons24-sprite(question);
+    }
+
